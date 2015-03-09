@@ -21,11 +21,11 @@ ENV WORKDIR /tmp/build/roles/ansible-zookeeper
 WORKDIR /tmp/build/roles/ansible-zookeeper
 
 # -----> Add assets
-ADD ./defaults $WORKDIR/defaults
-ADD ./meta $WORKDIR/meta
-ADD ./tasks $WORKDIR/tasks
-ADD ./templates $WORKDIR/templates
-ADD ./ci $WORKDIR/ci
+ADD ../../defaults $WORKDIR/defaults
+ADD ../../meta $WORKDIR/meta
+ADD ../../tasks $WORKDIR/tasks
+ADD ../../templates $WORKDIR/templates
+ADD ../../ci $WORKDIR/ci
 
 # -----> Install Galaxy Dependencies
 
